@@ -1,0 +1,26 @@
+{
+  "name": "Desafio5-PiedraPapelOTijeras",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@parcel/transformer-image": "^2.8.2",
+    "@types/node": "^18.11.16",
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.8.2"
+  },
+  "scripts": {
+    "dev": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html -d build",
+    "deploy": "gh-pages -d dist "
+  },
+  "devDependencies": {
+    "console-browserify": "^1.2.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "punycode": "^1.4.1",
+    "querystring-es3": "^0.2.1",
+    "timers-browserify": "^2.0.12",
+    "url": "^0.11.0"
+  }
+}

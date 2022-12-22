@@ -1,0 +1,24 @@
+:root{
+    --color-principal: #f00;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    background-image: url(./resources/fondodv.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.titulo{
+    color: var(--color-principal);
+}
+
+span{
+    display:block;
+}
