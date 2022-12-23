@@ -33,7 +33,7 @@ customElements.define(
                 .results{
                     margin-top:80px;
                     height:100px;
-                    width:400px;
+                    width:320px;
                     border: solid 5px white;
                     background-color:#FECD70;
                     display:flex;
@@ -48,7 +48,18 @@ customElements.define(
 
                 body{
                     background-color:#894949E5;
-                    
+                }
+                @media(min-width:768px){
+                    .results{
+                        margin-top:80px;
+                    height:100px;
+                    width:400px;
+                    border: solid 5px white;
+                    background-color:#FECD70;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    }
                 }
 
             `
@@ -69,7 +80,7 @@ customElements.define(
                 .results{
                     margin-top:80px;
                     height:100px;
-                    width:400px;
+                    width:320px;
                     border: solid 5px white;
                     background-color:#B6E2A1;
                     display:flex;
@@ -85,6 +96,19 @@ customElements.define(
                 body{
                     background-color:#894949E5;
                     
+                }
+
+                @media(min-width:768px){
+                    .results{
+                        margin-top:80px;
+                    height:100px;
+                    width:400px;
+                    border: solid 5px white;
+                    background-color:#B6E2A1;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    }
                 }
 
             `
@@ -104,7 +128,7 @@ customElements.define(
                 .results{
                     margin-top:80px;
                     height:100px;
-                    width:400px;
+                    width:320px;
                     border: solid 5px white;
                     background-color:#FD8A8A;
                     display:flex;
@@ -119,7 +143,18 @@ customElements.define(
 
                 body{
                     background-color:#894949E5;
-                    
+                }
+                @media(min-width:768px){
+                    .results{
+                        margin-top:80px;
+                    height:100px;
+                    width:400px;
+                    border: solid 5px white;
+                    background-color:#FD8A8A;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    }
                 }
             `
             }

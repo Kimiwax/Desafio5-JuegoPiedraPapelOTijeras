@@ -19,6 +19,11 @@ customElements.define(
                 .scissors{
                     height:200px;
                 }
+                @media(min-width:768px){
+                    .scissors{
+                        height:250px;
+                    }
+                }
             `
 
             shadow.appendChild(style);

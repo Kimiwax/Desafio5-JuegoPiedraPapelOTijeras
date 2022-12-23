@@ -28,6 +28,20 @@ export function initInstructions(params){
         font-size: 30px;
         text-align: center;
     }
+    @media(min-width:768px){
+        h4{
+            margin-top:60px;
+            width:400px;
+            font-size:40px;
+            margin-bottom:0px;
+        }
+    }
+    @media(min-width:768px){
+        .btn-jugar{
+            margin-bottom:30px;
+            margin-top:0px;
+        }
+    }
     
 `;  
 

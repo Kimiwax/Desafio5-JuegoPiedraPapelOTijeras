@@ -19,6 +19,11 @@ customElements.define(
                 .rock{
                     height:200px;
                 }
+                @media(min-width:768px){
+                    .rock{
+                        height:250px;
+                    }
+                }
             `
 
             shadow.appendChild(style);

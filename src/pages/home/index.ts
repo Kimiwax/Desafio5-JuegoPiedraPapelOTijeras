@@ -6,8 +6,8 @@ export function initHome(params){
     div.classList.add("container-home");
     div.innerHTML = `
         <h1>Piedra Papel o Tijera</h1>
-        <comp-button class="btn-c"><span>Empezar</span></comp-button>
-        <div>
+        <comp-button class="btn-c"><span>EMPEZAR</span></comp-button>
+        <div class="div-componentes">
         <comp-scissors></comp-scissors>
         <comp-rock></comp-rock>
         <comp-paper></comp-paper>
@@ -19,11 +19,28 @@ export function initHome(params){
             align-items: center;
             flex-direction:column;
         }
-    btn-c{
-       
-    }
+        .div-componentes{
+            margin-top:25px;
+        }
     h1{
-        margin-top:100px;
+        font-size: 70px;
+        width: 300px;
+        text-align:center;
+        margin-bottom:0px;
+    }
+
+    @media(min-width:768px){
+        h1{
+            margin-top:90px;
+           width:300px;
+           font-size: 70px;
+           margin-bottom:0px;
+        }
+    }
+    @media(min-width:768px){
+        .div-componentes{
+            margin-top:60px;
+        }
     }
         
     `

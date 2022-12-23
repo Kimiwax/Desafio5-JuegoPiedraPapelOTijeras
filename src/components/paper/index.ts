@@ -20,6 +20,11 @@ customElements.define(
                 .paper{
                     height:200px;
                 }
+                @media(min-width:768px){
+                    .paper{
+                        height:250px;
+                    }
+                }
             `
 
             shadow.appendChild(style);
