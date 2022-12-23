@@ -6,7 +6,7 @@ export function initGame(params){
     div.classList.add("container-game");
     const style = document.createElement("style");
   
-
+//////Contador que reinicia la página si no se elige ninguna opcion
     let counter = 3;
     const invervalId = setInterval(()=>{
           counter--;
@@ -89,8 +89,9 @@ export function initGame(params){
     
 `;
 
-
+///Seleccion de los distintos contenedores para modificarlos
 const contadorEl = div.querySelector(".contador") as Element;
+
 const myPlays = div.querySelector<any>(".my-plays").children;
 const myPlaysDiv = div.querySelector(".my-plays") as Element;
 const enemyDiv = div.querySelector(".enemy-plays") as Element;
@@ -156,10 +157,9 @@ function activePlay(jugada){
 
 setTimeout(() => {
     const computerMove = state.getState().currentGame.computerPlay;
-    console.log(computerMove);
+    //console.log(computerMove);
     
     contadorEl.classList.add("invisible");
-
     enemyDiv.classList.add("active-enemy")
 
     if(computerMove == "tijera"){
@@ -177,7 +177,7 @@ setTimeout(() => {
         enemyScissor.classList.add("disabled");
         enemyRock.classList.add("disabled");
     }
-   console.log(state.whoWins() + " soy el whowhins");
+   //console.log(state.whoWins() + " soy el whowhins");
     
     setTimeout(()=>{
         params.goTo("/desafio-m5/scoreboard");

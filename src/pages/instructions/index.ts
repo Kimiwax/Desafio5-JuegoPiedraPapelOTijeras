@@ -1,7 +1,9 @@
+import { state } from "../../state";
+
 export function initInstructions(params){
+    state.getStorage();
     const div = document.createElement("div");
     const style = document.createElement("style");
-
     div.classList.add("container-instructions");
 
     div.innerHTML = `
@@ -49,7 +51,7 @@ div.appendChild(style);
 
 const button = div.querySelector(".btn-jugar") as Element;
     button.addEventListener('click', ()=>{
-        params.goTo("/play");
+        params.goTo("/desafio-m5/play");
     })
 
     return div

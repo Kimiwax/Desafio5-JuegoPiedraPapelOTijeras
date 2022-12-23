@@ -47,26 +47,8 @@ export function initHome(params){
 
     const button = div.querySelector(".btn-c") as Element;
     button.addEventListener('click', ()=>{
-        params.goTo("/instructions");
+        params.goTo("/desafio-m5/instructions");
     })
     div.appendChild(style);
     return div;
-}
-
-
-
-class HomePage extends Element {
-    constructor(){
-        super();
-    }
-
-    connectedCallback(){
-        this.render()
-    }
-
-    render(){
-        this.innerHTML = `
-            <my-play play="piedra">
-        `
-    }
 }

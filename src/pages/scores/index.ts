@@ -5,7 +5,7 @@ export function initScores(params){
     const div = document.createElement("div");
     const style = document.createElement("style");
     var resultado = state.whoWins();
-    console.log(resultado + " soy el score");
+    //console.log(resultado + " soy el score");
     
     const currentState = state.getState();
     let miPuntaje = currentState.history.myScore;
@@ -13,9 +13,10 @@ export function initScores(params){
 
     div.classList.add("container-scores");
 
-    
-
         div.innerHTML = `
+        <button class="btn-reset"><span class="material-symbols-outlined">
+        restart_alt
+        </span></button>
         <div>
         <comp-results whow="winner"></comp-results>
         </div>
@@ -28,6 +29,13 @@ export function initScores(params){
     `;
 
     style.innerHTML = `
+    .btn-reset{
+        background:white;
+        border:solid 3px #560090;
+        border-radius: 20%;
+        margin-left: 300px;
+        margin-top: 5px;
+    }
     results{
             background-color:black;
     
@@ -37,6 +45,7 @@ export function initScores(params){
         align-items: center;
         flex-direction:column;
     }
+    
 
     .h2-puntaje{
         text-align:center;
@@ -77,7 +86,13 @@ div.appendChild(style);
 
 const button = div.querySelector(".btn-jugar") as Element;
     button.addEventListener('click', ()=>{
-        params.goTo("/play");
+        params.goTo("/desafio-m5/play");
+    })
+const resetButton = div.querySelector(".btn-reset") as Element;
+    resetButton.addEventListener('click',()=>{
+        state.cleanData();
+        state.getStorage();
+        params.goTo("/desafio-m5/home")
     })
 
     return div
